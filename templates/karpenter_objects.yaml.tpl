@@ -34,8 +34,8 @@ spec:
         #   operator: In
         #   values: ["2"]
       taints:
-      - key: cluster-level
-        value: restricted
+      - key: tier
+        value: frontend
         effect: NoSchedule
       nodeClassRef:
         apiVersion: karpenter.k8s.aws/v1beta1
